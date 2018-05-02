@@ -33,25 +33,28 @@
 
   return t;
   }(document, "script", "twitter-wjs"));</script>
-  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Source+Serif+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
   
 </head>
   
 <body>
   
   <header>
-    <div class="main-nav">
-      <ul class="flex">
-        <li><a href="index.html">Home</a></li>
-        <li>FESC Facilities</li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="industry.html">Energy Industry</a></li>
+    <div class="flexcontainer">
+      <img src="images/header.jpg" alt="FESC logo">
+      <h1>FESC</h1>
+      <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="facility">FESC Facilities</li>
+        <li class="education"><a href="education.html">Education</a></li>
+        <li class="industry"><a href="industry.html">Energy Industry</a></li>
       </ul>
     </div>
-  </header>
+  </header> 
   
-  <article>
-    <h2>Energy Industry</h2>
+  <article class="article">
+    <h1>ENERGY INDUSTRY</h1>
     <img class="energy" src="http://floridaenergy.ufl.edu/wp-content/uploads/Algae-300x240.jpg" alt="Picture of algae">
     <p>FESC has an Industrial Partnership and Innovation Strategy that assures active collaboration with the private sector and other partners that will support and guide FESC’s vision, collaborate with FESC in our research, education, innovation, and outreach programs, and provide our students with an unparalleled educational experience to prepare them as R&D and innovation leaders of tomorrow.</p>
     <img class="energy" src="http://floridaenergy.ufl.edu/wp-content/uploads/storage3.jpg" alt="Experimental Battery">
@@ -70,7 +73,7 @@
 <!--  Side drop down nav-->
   <aside class="side-nav">
     <div class="dropdown">
-      <button class="dropbtn">More Nav</button>
+      <button class="dropbtn">Sub Menu</button>
         <div class="dropdown-content">
           <a href="#">About us</a>
           <a href="#">Florida Energy Facts</a>
@@ -82,18 +85,14 @@
   
   <section>
     <form name="email" onsubmit="address()">
-      <label>
+      <label>Please input your email.
         <input type="text" name="eMail">
       </label>
         <input type="submit">
     </form>
-  </section>
-  
-  <footer class="bottom-nav">
     <a href="#"><h4>Contact</h4></a>
     <a href="#"><h4>Site Map</h4></a>
-  
-  </footer>
+  </section>
   
    <a class="twitter-share-button"
    href="https://twitter.com/intent/tweet?text=Check%20out%20this%20page%20https%3A%2F%2Fgeorodent.github.io%2Fsocial-media%2F">

@@ -33,22 +33,25 @@
 
   return t;
   }(document, "script", "twitter-wjs"));</script>
-  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">  
+  <link href="https://fonts.googleapis.com/css?family=Anton|Source+Serif+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/new-styles.css">  
 </head>
   
 <body>
   <header>
-    <div class="main-nav">
-      <ul class="flex">
-        <li><a href="index.html">Home</a></li>
-        <li>FESC Facilities</li>
-        <li><a href="education.html">Education</a></li>
-        <li><a href="industry.html">Energy Industry</a></li>
+    <div class="flexcontainer">
+      <img src="images/header.jpg" alt="FESC logo">
+      <h1>FESC</h1>
+      <ul>
+        <li class="home"><a href="index.html">Home</a></li>
+        <li class="facility">FESC Facilities</li>
+        <li class="education"><a href="education.html">Education</a></li>
+        <li class="industry"><a href="industry.html">Energy Industry</a></li>
       </ul>
     </div>
-  </header>
+  </header> 
   
-  <article>
+  <article class="article">
     <h1>ENERGY EDUCATION</h1>
 <!--  Install img src and fill in attributes-->
     <p>Florida’s utilities have predicted that the State’s energy use will increase significantly in the coming years. Energy efficiency and renewable energy generation are vital to meeting this demand. FESC’s statewide education program will produce a workforce trained to meet Florida’s energy needs. Explore the sub-menus on the left side of this page for Florida energy education opportunities sorted by discipline, institution, and degree program, along with training providers and other energy education-related resources.
@@ -64,7 +67,7 @@
     
     <figure>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWlVm3fm_m9cd5qLZw3iX7iko45CIY43iVaVBx0bDaFwdwQ4zKAA" alt="Computer Education" title="Energy Education">
-      <figcaption>Some Text</figcaption>
+      <figcaption>FLORIDA ENERGY SYSTEMS CONSORTIUM</figcaption>
     </figure>
     
   </article>
@@ -72,7 +75,7 @@
 <!--  Side drop down nav-->
   <aside class="side-nav">
     <div class="dropdown">
-      <button class="dropbtn">More Nav</button>
+      <button class="dropbtn">Sub Menu</button>
         <div class="dropdown-content">
           <a href="#">About us</a>
           <a href="#">Florida Energy Facts</a>
@@ -84,18 +87,14 @@
   
   <section>
     <form name="email" onsubmit="address()">
-      <label>
+      <label>Please input your email.
         <input type="text" name="eMail">
       </label>
         <input type="submit">
     </form>
-  </section>
-  
-<!--  Bottom nav-->
-  <footer class="bottom-nav">
     <a href="#"><h4>Contact</h4></a>
     <a href="#"><h4>Site Map</h4></a>
-  </footer>
+  </section>
   
   <a class="twitter-share-button"
   href="https://twitter.com/intent/tweet?text=Check%20out%20this%20page%20https%3A%2F%2Fgeorodent.github.io%2Fsocial-media%2F">
