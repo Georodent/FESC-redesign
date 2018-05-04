@@ -3,8 +3,7 @@ body {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#2DA0FF));
-  background: linear-gradient(to bottom, white, #2DA0FF); }
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRulAW-E_A7yRRcR9eLulVYSg6n7anQQ5tdKVmdZJzlp5bHGr-2"); }
 
 .flexcontainer {
   display: -webkit-box;
@@ -20,13 +19,16 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 2em;
-  border-bottom: 1px solid black;
   height: 10em; }
 
-header h1 {
-  font-size: 7em;
-  width: 25em;
-  text-shadow: 3px 3px 3px darkgray; }
+header {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTitZ9f5X4moEJ0TUSMoJBPK3q4cbcGoagExrGjvbmg__Ll6kq0");
+  background-size: auto;
+  border-bottom: 1px solid black; }
+  header h1 {
+    font-size: 7em;
+    width: 25em;
+    text-shadow: 3px 3px 3px darkgray; }
 
 ul a {
   display: -webkit-box;
@@ -74,7 +76,8 @@ div img {
   border-radius: 8px;
   font-family: "Anton", sans-serif;
   -webkit-box-shadow: 1px 1px 1px black;
-          box-shadow: 1px 1px 1px black; }
+          box-shadow: 1px 1px 1px black;
+  margin: 0 0 0 5em; }
 
 .dropdown {
   position: relative;
@@ -111,7 +114,7 @@ div img {
   width: 70%;
   float: right;
   margin: 1em 2em 2em 0;
-  background-color: white;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NnjwMtRmEOmd6Bvu-ySt4RB-RQpGvPGRrCIBBWoxlZr0Skj2");
   padding: 0 1em;
   font-family: 'Source Serif Pro', serif;
   -webkit-box-shadow: 3px 3px 3px black;

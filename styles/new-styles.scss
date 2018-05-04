@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, white , #2DA0FF);
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRulAW-E_A7yRRcR9eLulVYSg6n7anQQ5tdKVmdZJzlp5bHGr-2");
 }
 
 .flexcontainer  {
@@ -13,14 +13,21 @@ body {
   align-items: center;
   justify-content: space-between;
   margin: 0 2em;
-  border-bottom: 1px solid black;
+  
   height: 10em;
 }
-header h1  {
+
+header  {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTitZ9f5X4moEJ0TUSMoJBPK3q4cbcGoagExrGjvbmg__Ll6kq0");
+  background-size: auto;
+  border-bottom: 1px solid black;
+  h1  {
   font-size: 7em;
   width: 25em;
   text-shadow: 3px 3px 3px darkgray;
 }
+}
+
 
 ul a {
   display: flex;
@@ -66,6 +73,7 @@ div img  {
   border-radius: 8px;
   font-family: $navfonts;
   box-shadow: 1px 1px 1px black;
+  margin: 0 0 0 5em;
 }
 
 .dropdown {
@@ -106,7 +114,8 @@ div img  {
   width: 70%; 
   float: right;
   margin: 1em 2em 2em 0;
-  background-color: white;
+//  background-color: white;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NnjwMtRmEOmd6Bvu-ySt4RB-RQpGvPGRrCIBBWoxlZr0Skj2");
   padding: 0 1em; 
   font-family: 'Source Serif Pro', serif;
   box-shadow: 3px 3px 3px black;
