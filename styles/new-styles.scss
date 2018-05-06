@@ -9,42 +9,35 @@ body {
 
 .flexcontainer  {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
-  margin: 0 2em;
-  
-  height: 10em;
-}
-
-header  {
+  align-items: center;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTitZ9f5X4moEJ0TUSMoJBPK3q4cbcGoagExrGjvbmg__Ll6kq0");
   background-size: auto;
   border-bottom: 1px solid black;
-  h1  {
-  font-size: 7em;
+}
+  #logo-fesc  {
+    font-size: 7em;
   width: 25em;
   text-shadow: 3px 3px 3px darkgray;
-}
-}
-
+  } 
 
 ul a {
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   text-decoration: none;
   color: black;
   margin-right: 20em;
   width: 100%;
 }
+
 li  {
-  
   list-style-type: none;
   font-family: $navfonts;
   background: linear-gradient(to right, white , silver);
   font-size: 1.2em;
   padding: 0 0 0 1em;
   box-shadow: 0 0 1rem  black;
+  
 }
 div img  {
   width: 8em;
@@ -62,6 +55,17 @@ div img  {
 
 .facility  {
   margin-left: 5%;
+}
+.florida  {
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-size: 2em;
+  margin-top: 0;
+  font-family: 'Source Serif Pro', serif;
+  background: linear-gradient(to left, #333A42, black);
+  
 }
 
 .dropbtn {
@@ -114,8 +118,7 @@ div img  {
   width: 70%; 
   float: right;
   margin: 1em 2em 2em 0;
-//  background-color: white;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NnjwMtRmEOmd6Bvu-ySt4RB-RQpGvPGRrCIBBWoxlZr0Skj2");
+  background-color: white;
   padding: 0 1em; 
   font-family: 'Source Serif Pro', serif;
   box-shadow: 3px 3px 3px black;
@@ -136,15 +139,8 @@ figcaption  {
 
 aside  {
   float: left;
-  width: 10%;
+  position: relative;
   margin: 3em 3em 0 2em;
-}
-
-img.side-nav  {
-  float: left;
-  margin: 4em 2em;
-  width: 100%;
-  
 }
 
 button {
@@ -165,14 +161,6 @@ form  {
   margin-top: 2em;
   font-family: $navfonts;
 }
-//
-//section  {
-//  border: 2px solid black; 
-//  width: 80%;
-//  height: 10%;
-//  background-color: lightgrey; 
-//  margin: 0 10% 0 10%;
-//}
 
 section h4  {
   font-family: 'Source Serif Pro', serif;
@@ -186,4 +174,47 @@ section a  {
   text-decoration: none;
   width: 100%;
   text-align: center; 
+}
+
+.share  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 2em 0;
+}
+
+@media (max-width: 725px) {
+  .flexcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+  }
+  ul a {
+    width: 100%;
+  }
+  li {
+    width: 100%;
+  }
+  #logo-fesc {
+    margin: 0 50%;
+  }
+  .home  {
+    margin: 0 50%;
+  }
+  .industry {
+    margin: 0 50%;
+  }
+  .education {
+    margin: 0 50%;
+  }
+  .facility  {
+    margin: 0 50%;
+  }
+  .dropbtn  {
+    clear: both;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  } 
 }

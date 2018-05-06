@@ -9,26 +9,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 2em;
-  height: 10em; }
-
-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTitZ9f5X4moEJ0TUSMoJBPK3q4cbcGoagExrGjvbmg__Ll6kq0");
   background-size: auto;
   border-bottom: 1px solid black; }
-  header h1 {
-    font-size: 7em;
-    width: 25em;
-    text-shadow: 3px 3px 3px darkgray; }
+
+#logo-fesc {
+  font-size: 7em;
+  width: 25em;
+  text-shadow: 3px 3px 3px darkgray; }
 
 ul a {
   display: -webkit-box;
@@ -36,8 +30,8 @@ ul a {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
   text-decoration: none;
   color: black;
   margin-right: 20em;
@@ -66,6 +60,17 @@ div img {
 
 .facility {
   margin-left: 5%; }
+
+.florida {
+  text-align: center;
+  width: 100%;
+  color: white;
+  background-color: black;
+  font-size: 2em;
+  margin-top: 0;
+  font-family: 'Source Serif Pro', serif;
+  background: -webkit-gradient(linear, right top, left top, from(#333A42), to(black));
+  background: linear-gradient(to left, #333A42, black); }
 
 .dropbtn {
   background-color: white;
@@ -114,7 +119,7 @@ div img {
   width: 70%;
   float: right;
   margin: 1em 2em 2em 0;
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NnjwMtRmEOmd6Bvu-ySt4RB-RQpGvPGRrCIBBWoxlZr0Skj2");
+  background-color: white;
   padding: 0 1em;
   font-family: 'Source Serif Pro', serif;
   -webkit-box-shadow: 3px 3px 3px black;
@@ -132,13 +137,8 @@ figcaption {
 
 aside {
   float: left;
-  width: 10%;
+  position: relative;
   margin: 3em 3em 0 2em; }
-
-img.side-nav {
-  float: left;
-  margin: 4em 2em;
-  width: 100%; }
 
 button {
   width: 6em;
@@ -176,5 +176,64 @@ section a {
   text-decoration: none;
   width: 100%;
   text-align: center; }
+
+.share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 2em 0; }
+
+@media (max-width: 725px) {
+  .flexcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap; }
+
+  ul a {
+    width: 100%; }
+
+  li {
+    width: 100%; }
+
+  #logo-fesc {
+    margin: 0 50%; }
+
+  .home {
+    margin: 0 50%; }
+
+  .industry {
+    margin: 0 50%; }
+
+  .education {
+    margin: 0 50%; }
+
+  .facility {
+    margin: 0 50%; }
+
+  .dropbtn {
+    clear: both;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 /*# sourceMappingURL=new-styles.css.map */
