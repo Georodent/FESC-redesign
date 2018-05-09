@@ -5,6 +5,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRulAW-E_A7yRRcR9eLulVYSg6n7anQQ5tdKVmdZJzlp5bHGr-2");
+  
 }
 
 .flexcontainer  {
@@ -15,11 +16,12 @@ body {
   background-size: auto;
   border-bottom: 1px solid black;
 }
-  #logo-fesc  {
-    font-size: 7em;
+
+#logo-fesc  {
+  font-size: 7em;
   width: 25em;
   text-shadow: 3px 3px 3px darkgray;
-  } 
+} 
 
 ul a {
   display: flex;
@@ -37,12 +39,14 @@ li  {
   font-size: 1.2em;
   padding: 0 0 0 1em;
   box-shadow: 0 0 1rem  black;
-  
 }
+
 div img  {
   width: 8em;
   border: 3px solid black;
   margin-left: 1em;
+  transition: transform 3s ease-in-out;
+  transform: rotate(360deg);
 }
 
 .industry  {
@@ -56,6 +60,7 @@ div img  {
 .facility  {
   margin-left: 5%;
 }
+
 .florida  {
   text-align: center;
   width: 100%;
@@ -64,8 +69,7 @@ div img  {
   font-size: 2em;
   margin-top: 0;
   font-family: 'Source Serif Pro', serif;
-  background: linear-gradient(to left, #333A42, black);
-  
+  background: linear-gradient(to left, #333A42, black);  
 }
 
 .dropbtn {
@@ -92,6 +96,7 @@ div img  {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  margin: .4em 0 0 4em;
 }
 
 .dropdown-content a {
@@ -155,6 +160,9 @@ section  {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #C2CFFF;
+  border: 8px solid black;
+  margin: 0 .5em;
 }
 
 form  {
@@ -180,7 +188,7 @@ section a  {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 2em 0;
+  margin: 1em 0 2em 0;
 }
 
 @media (max-width: 725px) {
@@ -190,10 +198,12 @@ section a  {
     align-items: center;
     flex-flow: wrap;
   }
-  ul a {
-    width: 100%;
+  
+  ul {
+    width: 45%;
+    margin-right: 6em;
   }
-  li {
+  li  {
     width: 100%;
   }
   #logo-fesc {
@@ -211,10 +221,54 @@ section a  {
   .facility  {
     margin: 0 50%;
   }
-  .dropbtn  {
-    clear: both;
-    display: flex; 
+  
+  figure img  {
+    width: 100%;
+    margin: auto;
+  }
+  aside  {
+    width: 85%;
+    margin: 1em auto 1em auto;
+    display: flex;
     justify-content: center;
     align-items: center;
-  } 
+  }
+  form  {
+    text-align: center;
+  }
+}
+
+@media (max-width: 350px){
+  ul {
+    width: 45%;
+    margin-right: 6em;
+  }
+  #logo-fesc  {
+    font-size: 4em;
+  }
+  .article  {
+    margin: 0 1.5em;
+  }
+
+  .energy  {
+    width: 100%;
+  }
+  
+  figure img  {
+    width: 100%;
+  }
+  aside  {
+    width: 75%;
+    margin: 1em auto 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdown-content  {
+    margin: auto;
+  }
+  
+  form  {
+    text-align: center;
+  }
 }
