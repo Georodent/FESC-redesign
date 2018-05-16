@@ -102,7 +102,7 @@ div img  {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin: .4em 0 0 4em;
+  margin: 0 0 0 4em;
 }
 
 .dropdown-content a {
@@ -169,7 +169,6 @@ section  {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #C2CFFF;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaRLj24obqTMGAFmvyb4g3qvYHSC-vtM8juYRzBzhBYMA57nh5");
   background-size: contain;
   border: 1.5px solid black;
@@ -199,6 +198,7 @@ section a  {
 input  {
   font-family: Times, sans-serif; 
   font-size: 1rem;
+  
 }
 .share  {
   display: flex;
@@ -211,7 +211,7 @@ input  {
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1090px) {
   .flexcontainer {
     display: flex;
     justify-content: center;
@@ -258,12 +258,12 @@ input  {
   }
   
   aside  {
-    width: 85%;
+    width: 88%;
     margin: 1em auto 1em auto;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
   form  {
     text-align: center;
@@ -290,7 +290,7 @@ input  {
   }
 
   .energy  {
-    width: 100%;
+    width: 90%;
   }
   
   figure img  {
