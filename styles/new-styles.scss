@@ -200,14 +200,36 @@ input  {
   font-size: 1rem;
   
 }
+
+#chart_div  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+#barchart_values  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+}
+
 .share  {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1em 0 2em 0;
 }
+
+main h1  {
+  text-align: center;
+  font-family: $navfonts; 
+  background-color: white;
+}
+
 @media (max-width: 875px){
-  li  {
+  ul  {margin-left: -1em;
   }
 }
 
