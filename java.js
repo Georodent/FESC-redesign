@@ -7,6 +7,7 @@ function address(){
 }
 
 // Beginning of Stepped Area chart
+google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
@@ -72,10 +73,12 @@ google.charts.setOnLoadCallback(drawChart);
         ]);
 
         var options = {
-          title: 'Total Consumption of Electricity in Florida from 1960-2016',
+          title: 'Consumption of Electricity in Florida from 1960-2016',
           vAxis: {title: 'FLORIDA ENERGY'},
           isStacked: true,
+    // installed two options, backgroundColor, and colors
           backgroundColor: 'darkgray',
+          colors: ['lightblue'],
           width: 500,
           height: 300,
         };
@@ -86,7 +89,7 @@ google.charts.setOnLoadCallback(drawChart);
 
 
 // Beginning of Bar Chart  
-google.charts.load("current", {packages:["corechart"]});
+
 google.charts.setOnLoadCallback(drawChart1);
 
 function drawChart1() {
@@ -159,12 +162,14 @@ function drawChart1() {
                        ]);
 
         var options = {
-          title: "Production of Renewable Energy",
+          title: "Production of Renewable Energy from 1960-2015",
           width: 500,
           height: 300,
           bar: {groupWidth: "100%"},
           legend: { position: "none" },
+  // Two options below as well
           backgroundColor: "darkgrey",
+          colors: ['lightgrey'],
         };
         var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
         chart.draw(view, options);
