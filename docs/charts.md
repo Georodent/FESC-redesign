@@ -2,7 +2,7 @@
 
 ## Stepped Area Chart
 
-I used for the first chart a stepped area chart.
+I used, for the first chart, a stepped area chart.
 It had a good layout for the data that needed to be inputted into it, and it shows a good clean upward slope as the years go by. Easy to read, and it was easy to insert into current project.
 
 
