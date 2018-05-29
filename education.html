@@ -34,25 +34,17 @@
   return t;
   }(document, "script", "twitter-wjs"));</script>
   
-  <script src="java.js"></script>
+  
   <link href="https://fonts.googleapis.com/css?family=Anton|Source+Serif+Pro" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="styles/new-styles.css">  
+  <link rel="stylesheet" type="text/css" href="styles/new-styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="components.js"></script>
 </head>
   
 <body>
-  <header>
-    <div class="flexcontainer">
-      <img src="images/header.jpg" alt="FESC logo">
-      <h1 id="logo-fesc">FESC</h1>
-      <ul>
-        <li class="home"><a href="index.html">Home</a></li>
-        <li class="facility"><a href="chart.html">Energy Charts</a></li>
-        <li class="education"><a href="education.html">Education</a></li>
-        <li class="industry"><a href="industry.html">Energy Industry</a></li>
-      </ul>
-    </div>
-    <h4 class="florida">FLORIDA ENERGY SYSTEMS CONSORTIUM</h4>
-  </header> 
+  <div id="app">
+    <flex-container></flex-container> 
+  </div>
   
   <article class="article">
     <h1>ENERGY EDUCATION</h1>
@@ -98,9 +90,13 @@
     <a href="#"><h4>Contact</h4></a>
     <a href="#"><h4>Site Map</h4></a>
   </section>
+  
   <div class="share">
     <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Check%20out%20this%20page%20https%3A%2F%2Fgeorodent.github.io%2Fsocial-media%2F">
     Tweet</a> 
   </div>
+  
+  <script src="java.js"></script>
+  
 </body>
 </html>

@@ -12,7 +12,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-//  justify-content: space-between;
   background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTitZ9f5X4moEJ0TUSMoJBPK3q4cbcGoagExrGjvbmg__Ll6kq0");
   background-size: auto;
   border-bottom: 1px solid black;
@@ -29,7 +28,6 @@ ul a {
   flex-direction: column;
   text-decoration: none;
   color: black;
-  // changing margin-right from 20em to 5em
   margin-right: 5em;
   width: 100%;
 }

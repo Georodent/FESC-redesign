@@ -5,9 +5,13 @@ function address(){
   var email = document.email.eMail.value
   alert("You are all signed up for our mailing list!!!")
 }
+var aboutApp = new Vue({
+  el: '#app',
+  data: { }
+});
+
 
 // Beginning of Stepped Area chart
-google.charts.load("current", {packages:["corechart"]});
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
         var data = google.visualization.arrayToDataTable([
@@ -173,4 +177,6 @@ function drawChart1() {
         chart.draw(view, options);
   }
 // End of bar chart 
+
+
 
