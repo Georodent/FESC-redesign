@@ -20,7 +20,7 @@ function address(){
 
 //  Beggining of API chart callback
 
-google.charts.load('current', {'packages':['corechart']});
+      google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(getData);
 
       function drawBasic(freshData) {
