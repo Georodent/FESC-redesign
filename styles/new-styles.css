@@ -200,7 +200,7 @@ input {
   font-family: Times, sans-serif;
   font-size: 1rem; }
 
-#chart_div {
+#chart_div, #chart_div2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
