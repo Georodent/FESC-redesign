@@ -7,13 +7,13 @@ function address(){
 }
 
 // this is for the header component
-var aboutApp = new Vue({
+  var aboutApp = new Vue({
   el: '#app',
   data: { }
 });
 
 // this is for the footer component
-var app = new Vue({
+  var app = new Vue({
   el: '#app1',
   data: { }
 });
