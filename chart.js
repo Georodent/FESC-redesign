@@ -54,7 +54,8 @@ function drawChart() {
           ['1968',135509],
           ['1967',119314],
           ['1966',108610],
-          ['1965',95878],              ['1964',87016],
+          ['1965',95878],              
+          ['1964',87016],
           ['1963',78258],
           ['1962',71216],
           ['1961',62705],
@@ -77,4 +78,50 @@ function drawChart() {
         chart.draw(data, options);
       }
 
+      google.charts.setOnLoadCallback(getData);
+
+      function drawBasic(freshData) {
+        freshData.unshift(["Year", "Billion BTUs"])
+
+        var data = google.visualization.arrayToDataTable(freshData);
+
+        var options = {
+          title: 'Energy Production in Florida',
+          chartArea: {width: '50%'},
+          width: 500,
+          height: 300,
+          backgroundColor: "darkgrey",
+          colors: ['lightblue'],
+          hAxis: {
+            title: 'BTUs',
+            minValue: 0
+          }
+        };
+
+        var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+
+        chart.draw(data, options);
+      }
+
+
+      function getData(){
+        // Create a new request object
+        let request = new XMLHttpRequest()
+        
+        let requestUrl = "https://api.eia.gov/series/?api_key=43fd391551b1a57ac02073fb37571ca7&series_id=SEDS.REPRB.FL.A"
+        // Open a connection
+        request.open('GET', requestUrl, true)
+        // Callback for when the request completes
+        request.onload = function(){
+          let theActualData = JSON.parse(request.response).series[0].data
+
+          drawBasic(theActualData)
+        }
+        // Callback for when there's an error
+        request.error = function(err){
+          console.log("error is: ", err)
+        }
+        // Send the request to the specified URL
+        request.send()
+      }
 

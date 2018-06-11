@@ -15,4 +15,10 @@ I used a plain old bar chart for my second choice. It's a little jumbled on the 
 
 
 Link: https://developers.google.com/chart/interactive/docs/gallery/barchart
+
+## Updated link for API call for generating Bar Chart
+API's documentation
+https://www.eia.gov/opendata/qb.php?category=40426&sdid=SEDS.REPRB.FL.A
+
+
      
